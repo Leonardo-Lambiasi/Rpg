@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { FileText, Users, Map, Skull, GamepadIcon, BookOpen } from "lucide-react";
-import medievalBanner from "@/assets/CapaJogo.png";
+import medievalBanner from "@/assets/guildapronta_upscaled.jpg";
 
 const Index = () => {
   const themes = [
@@ -62,7 +62,7 @@ const Index = () => {
           <img 
             src={medievalBanner} 
             alt="Banner Medieval Hellbound" 
-            className="w-80 h-60 object-cover rounded-lg shadow-xl border border-border"
+            className="w-60 h-60 object-cover rounded-lg shadow-xl border border-border"
           />
         </div>
       </div>

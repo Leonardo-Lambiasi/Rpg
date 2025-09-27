@@ -1,6 +1,6 @@
 import { Home, FileText, Users, Map, Skull, GamepadIcon, Info } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
-import rpgLogo from "@/assets/guildapronta_upscaled.jpg";
+import rpgLogo from "@/assets/CapaJogo.png";
 
 import {
   Sidebar,

@@ -8,8 +8,8 @@ const Personagens = () => {
   const personagens = [
     {
       id: 1,
-      nome: "Zalak Nola-Kageane",
-      classe: "Bárbaro Goaliath",
+      nome: "Zarlak Nola-Kageane",
+      classe: "Bárbaro Goliath",
       nivel: 3,
       origem: "Torre de Cristal",
       descricao: "Um podero Bárbaro que se transforma que vira um animal em todos os sentidos",
@@ -19,14 +19,14 @@ const Personagens = () => {
     },
     {
       id: 2,
-      nome: "Gareth Forjaferro",
-      classe: "Guerreiro Anão",
-      nivel: 15,
-      origem: "Clã Forjaferro",
-      descricao: "Um veterano guerreiro anão com décadas de experiência em batalha. Mestre na arte da forja e portador do martelo ancestral de seu clã.",
-      habilidades: ["Golpe Devastador", "Resistência Férrea", "Forja Mágica"],
+      nome: "Okazir",
+      classe: "Monge/Bárbaro Humano Negro",
+      nivel: 4,
+      origem: "Herói do Povo",
+      descricao: "Um monge do jogo da capoeira que no tempo livre toca cavaquinho para relaxar",
+      habilidades: ["Mantra", "Golpes Velozes", "Passo Rápido","Defesa Paciente"],
       status: "Ativo",
-      localizacao: "Montanhas de Ferro"
+      localizacao: "Cidade de Sanguma, Capital de Zairin"
     },
     {
       id: 3,
@@ -85,8 +85,9 @@ const Personagens = () => {
   };
 
   const getClasseColor = (classe: string) => {
+    if (classe.includes("Monge/Bárbaro")) return "#A0522D-700"
     if (classe.includes("Bárbaro")) return "bg-purple-600";
-    if (classe.includes("Guerreiro")) return "bg-orange-600";
+    if (classe.includes("Monge")) return "bg-orange-600";
     if (classe.includes("Assassina")) return "bg-gray-700";
     if (classe.includes("Clérigo")) return "bg-yellow-600";
     if (classe.includes("Ranger")) return "bg-green-700";
