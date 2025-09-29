@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import PageHeader from "@/components/ui/PageHeader";
-import { Skull, Sword, Shield, Zap, Heart, Eye } from "lucide-react";
+import { Skull, Zap, Eye, MapPin } from "lucide-react";
 
 const Monstros = () => {
   const monstros = [
@@ -11,78 +11,66 @@ const Monstros = () => {
       nome: "Dragão Ancião",
       tipo: "Dragão",
       nivel: 50,
-      hp: 2500,
-      ataque: 180,
-      defesa: 120,
       habilidades: ["Sopro Flamejante", "Voo", "Magia Ancestral"],
       habitat: "Montanhas Gélidas",
       raridade: "Lendário",
-      descricao: "Dragão milenar de escamas douradas, guardião de tesouros inimagináveis."
+      descricao: "Dragão milenar de escamas douradas, guardião de tesouros inimagináveis.",
+      encontrado: "Avistado no Pico Gélido durante a expedição de inverno. A criatura estava guardando uma caverna cheia de relíquias antigas. O grupo teve que recuar devido ao seu poder."
     },
     {
       id: 2,
       nome: "Lobo Sombrio",
       tipo: "Fera",
       nivel: 15,
-      hp: 450,
-      ataque: 65,
-      defesa: 40,
       habilidades: ["Mordida Venenosa", "Furtividade", "Uivo Aterrorizante"],
       habitat: "Floresta Sombria",
       raridade: "Comum",
-      descricao: "Lobo de pelagem negra que se move nas sombras da floresta."
+      descricao: "Lobo de pelagem negra que se move nas sombras da floresta.",
+      encontrado: "Encontrado na entrada da Floresta Sombria, caçando em matilha. Foram necessários 3 aventureiros para derrotá-lo."
     },
     {
       id: 3,
       nome: "Golem de Pedra",
       tipo: "Construto",
       nivel: 25,
-      hp: 800,
-      ataque: 90,
-      defesa: 150,
       habilidades: ["Punho Esmagador", "Resistência Mágica", "Regeneração"],
       habitat: "Ruínas Antigas",
       raridade: "Raro",
-      descricao: "Guardião de pedra animado por magia antiga para proteger tesouros."
+      descricao: "Guardião de pedra animado por magia antiga para proteger tesouros.",
+      encontrado: "Descoberto nas Ruínas do Templo Esquecido, protegendo um altar místico. Permaneceu inativo até que tentamos tocar no artefato central."
     },
     {
       id: 4,
       nome: "Esqueleto Guerreiro",
       tipo: "Morto-Vivo",
       nivel: 8,
-      hp: 180,
-      ataque: 45,
-      defesa: 25,
       habilidades: ["Ataque Duplo", "Imunidade a Veneno", "Reformar"],
       habitat: "Cemitérios",
       raridade: "Comum",
-      descricao: "Guerreiro morto há muito tempo, ainda empunha suas armas."
+      descricao: "Guerreiro morto há muito tempo, ainda empunha suas armas.",
+      encontrado: "Patrulhando o Cemitério Antigo à noite. Aparentemente guarda o túmulo de um nobre esquecido."
     },
     {
       id: 5,
       nome: "Basilisco Real",
       tipo: "Réptil Mágico",
       nivel: 35,
-      hp: 1200,
-      ataque: 120,
-      defesa: 80,
       habilidades: ["Olhar Petrificante", "Veneno Mortal", "Escamas Resistentes"],
       habitat: "Cavernas Profundas",
       raridade: "Épico",
-      descricao: "Serpente gigantesca cujo olhar transforma inimigos em pedra."
+      descricao: "Serpente gigantesca cujo olhar transforma inimigos em pedra.",
+      encontrado: "Localizado nas Cavernas de Cristal, cercado por estátuas de pedra que antes eram aventureiros. Conseguimos escapar usando espelhos para desviar seu olhar."
     },
     {
       id: 6,
       nome: "Orc Chefe",
       tipo: "Humanoide",
       nivel: 20,
-      hp: 600,
-      ataque: 85,
-      defesa: 60,
       habilidades: ["Berserker", "Comando de Guerra", "Machado Duplo"],
       habitat: "Fortalezas Orcas",
       raridade: "Incomum",
-      descricao: "Líder tribal orc de força descomunal e ferocidade implacável."
+      descricao: "Líder tribal orc de força descomunal e ferocidade implacável.",
+      encontrado: "Confrontado na Fortaleza da Montanha Negra, liderando um exército de 50 orcs. A batalha durou horas."
     }
   ];
 
@@ -143,27 +131,9 @@ const Monstros = () => {
               </div>
             </CardHeader>
             <CardContent className="space-y-4">
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 {monstro.descricao}
               </p>
-              
-              <div className="grid grid-cols-3 gap-2 text-center">
-                <div className="bg-red-500/10 rounded-lg p-2">
-                  <Heart className="w-4 h-4 mx-auto mb-1 text-red-400" />
-                  <p className="text-xs text-red-400 font-semibold">{monstro.hp}</p>
-                  <p className="text-xs text-muted-foreground">HP</p>
-                </div>
-                <div className="bg-orange-500/10 rounded-lg p-2">
-                  <Sword className="w-4 h-4 mx-auto mb-1 text-orange-400" />
-                  <p className="text-xs text-orange-400 font-semibold">{monstro.ataque}</p>
-                  <p className="text-xs text-muted-foreground">ATK</p>
-                </div>
-                <div className="bg-blue-500/10 rounded-lg p-2">
-                  <Shield className="w-4 h-4 mx-auto mb-1 text-blue-400" />
-                  <p className="text-xs text-blue-400 font-semibold">{monstro.defesa}</p>
-                  <p className="text-xs text-muted-foreground">DEF</p>
-                </div>
-              </div>
               
               <div>
                 <h4 className="text-sm font-semibold text-foreground mb-2 flex items-center">
@@ -179,13 +149,19 @@ const Monstros = () => {
                 </div>
               </div>
               
-              <div className="pt-2 border-t border-border/50">
-                <p className="text-xs text-muted-foreground mb-2">
-                  <strong>Habitat:</strong> {monstro.habitat}
-                </p>
-                <Button variant="rpgAccent" size="sm" className="w-full">
-                  Ver Detalhes
-                </Button>
+              <div className="space-y-3">
+                <div className="flex items-center gap-2 text-sm">
+                  <MapPin className="w-4 h-4 text-muted-foreground" />
+                  <span className="text-muted-foreground">Habitat:</span>
+                  <span className="text-foreground font-medium">{monstro.habitat}</span>
+                </div>
+                
+                <div className="bg-accent/5 rounded-lg p-3 border border-accent/20">
+                  <p className="text-xs font-semibold text-accent mb-2">📍 Registro de Avistamento</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    {monstro.encontrado}
+                  </p>
+                </div>
               </div>
             </CardContent>
           </Card>

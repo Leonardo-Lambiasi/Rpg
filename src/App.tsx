@@ -30,7 +30,7 @@ const App = () => (
               <header className="h-12 flex items-center border-b border-border bg-background px-4">
                 <SidebarTrigger />
                 <h1 className="ml-4 text-lg font-semibold text-foreground">
-                  Hellbound Rpg Wiki
+                  Hellbound Rpg
                 </h1>
               </header>
               <main className="flex-1 p-6 bg-background">
