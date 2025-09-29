@@ -20,7 +20,7 @@ const Personagens = () => {
     {
       id: 2,
       nome: "Okazir",
-      classe: "Monge/Bárbaro Humano Negro",
+      classe: "Monge/Bárbaro Humano",
       nivel: 4,
       origem: "Herói do Povo",
       descricao: "Um monge do jogo da capoeira que no tempo livre toca cavaquinho para relaxar",
