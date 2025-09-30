@@ -30,47 +30,69 @@ const Personagens = () => {
     },
     {
       id: 3,
-      nome: "Sombra Prateada",
-      classe: "Assassina Élfica",
-      nivel: 10,
-      origem: "Floresta Sombria",
-      descricao: "Uma assassina élfica misteriosa que trabalha nas sombras. Pouco se sabe sobre seu passado, mas sua lealdade aos contratantes é inquestionável.",
-      habilidades: ["Invisibilidade", "Ataque Furtivo", "Venenos Letais"],
-      status: "Desconhecido",
-      localizacao: "????"
+      nome: "Pelgard",
+      classe: "Paladino da Tempestade Humano",
+      nivel: 3,
+      origem: "Acólito",
+      descricao: "Um paladino da tempestade que busca fazer a justiça com as próprias mãos.",
+      habilidades: ["Divini Smite", "Poço de Cura", "Golpe Trovejante", "Canalizar Juramento"],
+      status: "Ativo",
+      localizacao: "Havelok"
     },
     {
       id: 4,
-      nome: "Padre Marcus",
-      classe: "Clérigo da Luz",
-      nivel: 8,
-      origem: "Templo da Luz Eterna",
-      descricao: "Um clérigo devoto dedicado a curar feridos e banir as trevas. Marcus é conhecido por sua compaixão e coragem mesmo diante do mal absoluto.",
-      habilidades: ["Cura Divina", "Banir Mortos-vivos", "Bênção Sagrada"],
+      nome: "Sohtriv",
+      classe: "Clérigo da Morte Dragonborn",
+      nivel: 4,
+      origem: "Culto das Montanhas",
+      descricao: "Um clérigo com sede de conhecimento e poder, agora ele busca dominar a necromancia em nome do seu deus",
+      habilidades: ["Cura Divina", "Banir Mortos-vivos", "Bênção Sagrada", "Canalizar Divindade: Toque necrotico", ],
       status: "Ativo",
       localizacao: "Templo Central"
     },
     {
       id: 5,
-      nome: "Kael Ventolâmina",
-      classe: "Ranger Humano",
-      nivel: 13,
-      origem: "Terras Selvagens",
-      descricao: "Um ranger experiente que conhece cada trilha e segredo das terras selvagens. Kael é acompanhado por seu fiel lobo, Tempestade.",
-      habilidades: ["Rastreamento Avançado", "Tiro Certeiro", "Companheiro Animal"],
-      status: "Em Missão",
-      localizacao: "Floresta do Norte"
+      nome: "Mazda",
+      classe: "Feiticeiro Alma Divina Humano",
+      nivel: 4,
+      origem: "Acólito",
+      descricao: "Um homem intelectual e frágil, em busca de uma forma de servir o seu deus",
+      habilidades: ["Farpas de Prata", "Sono", "Reflexoes", "Sortudo"],
+      status: "Inativo",
+      localizacao: "Haverlok"
     },
     {
       id: 6,
-      nome: "Morgana Sanguesombrio",
-      classe: "Necromante",
-      nivel: 16,
-      origem: "Terras Amaldiçoadas",
-      descricao: "Uma poderosa necromante que caminha na linha tênue entre a luz e as trevas. Morgana busca conhecimento proibido para derrotar uma ameaça ainda maior.",
-      habilidades: ["Controle de Mortos", "Drenar Vida", "Portal Sombrio"],
-      status: "Suspeita",
-      localizacao: "Torre Negra"
+      nome: "Rat",
+      classe: "Bardo Camundongo",
+      nivel: 4,
+      origem: "Artista",
+      descricao: "Um bardo camundongo que viaja o mundo em busca de histórias para contar e canções para cantar",
+      habilidades: ["Inspiração de Bardo", "Baralho do Destino", "Saraivada de Cartas"],
+      status: "Ativo",
+      localizacao: "Haverlok"
+    },
+    {
+      id: 7,
+      nome: "Eliel, Filho da Luz",
+      classe: "Clérigo da Luz Meio-Elfo",
+      nivel: 3,
+      origem: "Acólito",
+      descricao: "Um clérigo devoto que busca espalhar a luz e a esperança em um mundo sombrio",
+      habilidades: ["Curar Ferimentos", "Palavra Curativa", "Canalizar Divindade: Luz Radiante"],
+      status: "Ativo",
+      localizacao: "Haverlok"
+    },
+    {
+      id: 8,
+      nome: "Aldaron",
+      classe: "Patrulheiro Humano",
+      nivel: 3,
+      origem: "Forasteiro",
+      descricao: "Um patrulheiro que tenta ganhar a vida como mercenário, para dar uma vida melhor para sua família",
+      habilidades: ["Curar Ferimentos", "Marca do Caçador", "Explorador Natural"],
+      status: "Ativo",
+      localizacao: "Haverlok"
     }
   ];
 
@@ -90,7 +112,10 @@ const Personagens = () => {
     if (classe.includes("Monge")) return "bg-orange-600";
     if (classe.includes("Assassina")) return "bg-gray-700";
     if (classe.includes("Clérigo")) return "bg-yellow-600";
-    if (classe.includes("Ranger")) return "bg-green-700";
+    if (classe.includes("Patrulheiro")) return "bg-green-700";
+    if (classe.includes("Paladino")) return "bg-blue-700";
+    if (classe.includes("Bardo")) return "bg-rose-700";
+    if (classe.includes("Feiticeiro")) return "bg-red-700";
     return "bg-blue-600";
   };
 
