@@ -9,7 +9,7 @@ const Jogadores = () => {
     {
       id: 1,
       nome: "Robert",
-      nickname: "RobertMion",
+      nickname: "Robertmion",
       nivel: 0,
       classe: "??",
       guild: "??",

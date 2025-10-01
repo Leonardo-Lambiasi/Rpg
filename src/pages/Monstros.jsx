@@ -8,69 +8,80 @@ const Monstros = () => {
   const monstros = [
     {
       id: 1,
-      nome: "Dragão Ancião",
-      tipo: "Dragão",
-      nivel: 50,
-      habilidades: ["Sopro Flamejante", "Voo", "Magia Ancestral"],
-      habitat: "Montanhas Gélidas",
+      nome: "Multação Oblex",
+      tipo: "Limo Grande",
+      nivel: 3,
+      habilidades: ["Pseudopods", "Devorar Memorias", "Simulacrum"],
+      habitat: "Desconhecido",
       raridade: "Lendário",
-      descricao: "Dragão milenar de escamas douradas, guardião de tesouros inimagináveis.",
-      encontrado: "Avistado no Pico Gélido durante a expedição de inverno. A criatura estava guardando uma caverna cheia de relíquias antigas. O grupo teve que recuar devido ao seu poder."
+      descricao: "Um Oblex que foi modificado por multagênicos, a transformação o deixou mais forte do que o normal com habilidades que um Oblex normal não tem",
+      encontrado: "Vila de Nidalf, estava no subsolo da vila, em um labirinto de tuneis"
     },
     {
       id: 2,
-      nome: "Lobo Sombrio",
-      tipo: "Fera",
-      nivel: 15,
-      habilidades: ["Mordida Venenosa", "Furtividade", "Uivo Aterrorizante"],
-      habitat: "Floresta Sombria",
-      raridade: "Comum",
-      descricao: "Lobo de pelagem negra que se move nas sombras da floresta.",
-      encontrado: "Encontrado na entrada da Floresta Sombria, caçando em matilha. Foram necessários 3 aventureiros para derrotá-lo."
+      nome: "Simulacrum Aldeão",
+      tipo: "Limo",
+      nivel: 3,
+      habilidades: ["Fortitude"],
+      habitat: "Desconhecido",
+      raridade: "Raro",
+      descricao: "Uma extenção de um Oblex Mutante, criado a partir de uma memoria devorada de algum aldeão.",
+      encontrado: "Vila de Nidalf, eram as pessoas do vilarejo"
     },
     {
       id: 3,
-      nome: "Golem de Pedra",
-      tipo: "Construto",
-      nivel: 25,
-      habilidades: ["Punho Esmagador", "Resistência Mágica", "Regeneração"],
-      habitat: "Ruínas Antigas",
+      nome: "Simulacrum Cão",
+      tipo: "Limo",
+      nivel: 3,
+      habilidades: ["Fortitude","Faro","Táticas de Matilha"],
+      habitat: "Desconhecido",
       raridade: "Raro",
-      descricao: "Guardião de pedra animado por magia antiga para proteger tesouros.",
-      encontrado: "Descoberto nas Ruínas do Templo Esquecido, protegendo um altar místico. Permaneceu inativo até que tentamos tocar no artefato central."
+      descricao: "Uma extenção de um Oblex Mutante, criado a partir de uma memoria devorada de algum cachorro.",
+      encontrado: "Vila de Nidalf, no vilarejo"
     },
     {
       id: 4,
-      nome: "Esqueleto Guerreiro",
-      tipo: "Morto-Vivo",
-      nivel: 8,
-      habilidades: ["Ataque Duplo", "Imunidade a Veneno", "Reformar"],
-      habitat: "Cemitérios",
-      raridade: "Comum",
-      descricao: "Guerreiro morto há muito tempo, ainda empunha suas armas.",
-      encontrado: "Patrulhando o Cemitério Antigo à noite. Aparentemente guarda o túmulo de um nobre esquecido."
+      nome: "Simulacrum Perseguidor",
+      tipo: "Limo",
+      nivel: 3,
+      habilidades: ["Fortitude","Criar Túneis","Audição Aguçada","Mordida Atropeladora"],
+      habitat: "Desconhecido",
+      raridade: "Lendário",
+      descricao: "Uma extenção de um Oblex Mutante, sua obrigação é expandir o território e devorar qualquer intruso no covil",
+      encontrado: "Vila de Nidalf, no subsolo da vila, em um labirinto de tuneis"
     },
     {
       id: 5,
-      nome: "Basilisco Real",
-      tipo: "Réptil Mágico",
-      nivel: 35,
-      habilidades: ["Olhar Petrificante", "Veneno Mortal", "Escamas Resistentes"],
-      habitat: "Cavernas Profundas",
-      raridade: "Épico",
-      descricao: "Serpente gigantesca cujo olhar transforma inimigos em pedra.",
-      encontrado: "Localizado nas Cavernas de Cristal, cercado por estátuas de pedra que antes eram aventureiros. Conseguimos escapar usando espelhos para desviar seu olhar."
+      nome: "Casa Mimico",
+      tipo: "Monstruosidade Grande",
+      nivel: 3,
+      habilidades: ["Troca de Forma", "Agarrão de Lingua", "Atropelar"],
+      habitat: "Desconhecido",
+      raridade: "Lendário",
+      descricao: "Um dos maiores mimicos já encontrados, capaz de se passar por uma casa inteira, com varias armadilhas e ataques poderosos. Além de servir de abrigo para outros mimicos menores.",
+      encontrado: "Fazenda Churrascada do Big Bob Creek, estava disfarçado de casa abandonada."
     },
     {
       id: 6,
-      nome: "Orc Chefe",
-      tipo: "Humanoide",
-      nivel: 20,
-      habilidades: ["Berserker", "Comando de Guerra", "Machado Duplo"],
-      habitat: "Fortalezas Orcas",
-      raridade: "Incomum",
-      descricao: "Líder tribal orc de força descomunal e ferocidade implacável.",
-      encontrado: "Confrontado na Fortaleza da Montanha Negra, liderando um exército de 50 orcs. A batalha durou horas."
+      nome: "Mimico Mutante",
+      tipo: "Monstruosidade Média",
+      nivel: 3,
+      habilidades: ["Troca de Forma","Adesivo", "Agarrador", "Mordida Surpresa"],
+      habitat: "Desconhecido",
+      raridade: "Raro",
+      descricao: "Um mimico modificado que vira uma objeto quase perfeito, consegue extrair propriedades da sua forma transformada",
+      encontrado: "Fazenda Churrascada do Big Bob Creek, fazia parte de uma colônia de mimicos."
+    },
+    {
+      id: 7,
+      nome: "Pequeno Mimico Mutante",
+      tipo: "Monstruosidade Pequena",
+      nivel: 3,
+      habilidades: ["Troca de Forma","Adesivo", "Agarrador", "Mordida Surpresa Superior", "Inteligente"],
+      habitat: "Desconhecido",
+      raridade: "Lendário",
+      descricao: "O primeiro Mimico a poder entender e falar algum idioma, pequeno de mais para caçar igual seus semelhantes, compensa com sua inteligencia se misturando na sociedade. Realiza um papel de comensalismo, multualismo ou inquilinismo, dependendo da situação.",
+      encontrado: "Fazenda Churrascada do Big Bob Creek, estava desfarçado de ursinho o qual era de uma criança."
     }
   ];
 
