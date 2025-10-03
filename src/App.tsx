@@ -14,6 +14,7 @@ import Monstros from "./pages/Monstros";
 import Jogadores from "./pages/Jogadores";
 import Sobre from "./pages/Sobre";
 import NotFound from "./pages/NotFound";
+import HabilidadeDetalhe from "./pages/HabilidadeDetalhe";
 
 const queryClient = new QueryClient();
 
@@ -43,6 +44,7 @@ const App = () => (
                   <Route path="/monstros" element={<Monstros />} />
                   <Route path="/jogadores" element={<Jogadores />} />
                   <Route path="/sobre" element={<Sobre />} />
+                  <Route path="/habilidade/:nome" element={<HabilidadeDetalhe />} />
                   {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                   <Route path="*" element={<NotFound />} />
                 </Routes>

@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import PageHeader from "@/components/ui/PageHeader";
 import { Skull, Zap, Eye, MapPin } from "lucide-react";
 
+import { Link } from "react-router-dom";
+
 const Monstros = () => {
   const monstros = [
     {
@@ -153,10 +155,19 @@ const Monstros = () => {
                 </h4>
                 <div className="flex flex-wrap gap-1">
                   {monstro.habilidades.map((habilidade, index) => (
-                    <Badge key={index} variant="secondary" className="text-xs">
-                      {habilidade}
-                    </Badge>
-                  ))}
+                    <Link 
+                        key={index} 
+                         to={`/habilidade/${encodeURIComponent(habilidade)}`}
+                    >
+                   <Badge 
+                          variant="secondary" 
+                           className="text-xs cursor-pointer hover:bg-secondary/80 transition-colors"
+                  >
+                   {habilidade}
+                  </Badge>
+                  </Link>
+                ))}
+
                 </div>
               </div>
               
